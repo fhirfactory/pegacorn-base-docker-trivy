@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration issues
+Base docker image for trivy - Scanner for vulnerabilities in container images
 </p>
 
 [![GitHub Release][release-img]][release]
