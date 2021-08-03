@@ -22,10 +22,6 @@ RUN go mod verify
 RUN mv cmd/trivy/main.go cmd/trivy/trivy.go
 RUN go install cmd/trivy/trivy.go
 
-ARG IMAGE_BUILD_TIMESTAMP
-ENV IMAGE_BUILD_TIMESTAMP=${IMAGE_BUILD_TIMESTAMP}
-RUN echo IMAGE_BUILD_TIMESTAMP=${IMAGE_BUILD_TIMESTAMP}
-
 # Checking go environment variables - GOPATH determines where package was installed
 RUN go env
 ENTRYPOINT ["/root/go/bin/trivy"]
