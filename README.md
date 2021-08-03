@@ -1,12 +1,4 @@
 <p align="center">
-  <img src="docs/imgs/logo.png" width="200">
-</p>
-
-<p align="center">
-  <a href="https://aquasecurity.github.io/trivy/">Documentation</a> 
-</p>
-
-<p align="center">
 Base docker image for trivy - Scanner for vulnerabilities in container images
 </p>
 
