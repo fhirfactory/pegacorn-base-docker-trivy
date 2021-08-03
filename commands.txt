@@ -1,6 +1,2 @@
 # Build Dockerfile
-docker build --rm --build-arg IMAGE_BUILD_TIMESTAMP="%date% %time%" -t pegacorn-scanner-trivy:1.0.0 --file Dockerfile .
-
-# Scan image (If you would like to scan the image on your host machine, you need to mount docker.sock.)
-# Ref: https://hub.docker.com/r/aquasec/trivy
-docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock pegacorn-scanner-trivy:1.0.0 [image_name:tag]
+docker build --rm -t pegacorn-base-trivy:1.0.0 --file Dockerfile .
