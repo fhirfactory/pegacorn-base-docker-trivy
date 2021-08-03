@@ -1,5 +1,5 @@
 # Main Dockerfile from acquasecurity (This build fails - was unusable) -- https://hub.docker.com/r/aquasec/trivy/dockerfile
-# Install Go on Alpine -- Ref: https://stackoverflow.com/questions/52056387/how-to-install-go-in-alpine-linux
+# Install Go on Alpine -- Ref: https://fukubaka0825.medium.com/how-to-resolve-the-trouble-occurred-when-i-install-go-into-the-alpine-image-3c1e84f2315a
 FROM alpine:3.14
 RUN apk add --update --no-cache vim git make musl-dev go curl
 
